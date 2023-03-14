@@ -1,0 +1,15 @@
+{
+    "categories": {
+        "0": "technical",
+        "1": "internationalization",
+        "2": "data (things)"
+    },
+    "demo_page": "https://nrb-tester.bubbleapps.io/version-test/server-side-qr-code",
+    "description": "Generate QR Codes and Barcodes entirely server-side, allowing you to process in the backend or just load onto the frontend without another pesky element cluttering up your pages. Additionally, you can use a QR Code With Logo Element (frontend only) with advanced styling, color control, and display options. ",
+    "image": "//s3.amazonaws.com/appforest_uf/f1609295628546x711132909487295400/Screen%20Shot%202020-12-29%20at%209.33.37%20PM.png",
+    "license": "open_source",
+    "link": "https://nrb-tester.bubbleapps.io/version-test/server-side-qr-code",
+    "name": "Barcode & QR Code Generator",
+    "plugin_instructions": "Please view the extensive demo here: https://nrb-tester.bubbleapps.io/version-test/server-side-qr-code\n\nNote that you can access all the information you need in the top-left of the demo by clicking the links provided there.",
+    "sa_node_version": 14
+}

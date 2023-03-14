@@ -1,0 +1,78 @@
+{
+    "category": "plugins",
+    "display": "create a basic QR code",
+    "fields": {
+        "ADg": {
+            "caption": "data",
+            "editor": "DynamicValue",
+            "name": "data",
+            "rank": 0,
+            "value": "text"
+        },
+        "ADl": {
+            "caption": "Output Control",
+            "editor": "Label",
+            "name": "output_control",
+            "rank": 1
+        },
+        "ADm": {
+            "caption": "A Base 64 representation of the file will always be output and can be used directly as the data source for an image. However, if you would like the plugin to upload the file to your database, check the option below and set a filename.",
+            "editor": "Label",
+            "name": "opt",
+            "rank": 2
+        },
+        "ADn": {
+            "caption": "website home url",
+            "doc": "Use the dynamic value \"Website home url\" that Bubble has built-in",
+            "editor": "DynamicValue",
+            "name": "website_home_url",
+            "rank": 3,
+            "value": "text"
+        },
+        "ADo": {
+            "caption": "upload to file manager",
+            "default_val": false,
+            "doc": "Whether the file should be upload to the file manager automatically.",
+            "editor": "DynamicValue",
+            "name": "upload_to_file_manager",
+            "rank": 4,
+            "value": "boolean"
+        },
+        "ADp": {
+            "caption": "filename",
+            "doc": "The filename (including .png) for the uploaded file.",
+            "editor": "DynamicValue",
+            "name": "filename",
+            "rank": 5,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "ADh": {
+            "caption": "error message",
+            "name": "error_message",
+            "rank": 0,
+            "value": "text"
+        },
+        "ADi": {
+            "caption": "error occurred",
+            "name": "error_occurred",
+            "rank": 1,
+            "value": "boolean"
+        },
+        "ADj": {
+            "caption": "base 64",
+            "name": "base_64",
+            "rank": 2,
+            "value": "text"
+        },
+        "ADk": {
+            "caption": "URL",
+            "name": "URL",
+            "rank": 3,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

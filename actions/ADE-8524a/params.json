@@ -1,0 +1,193 @@
+{
+    "category": "plugins",
+    "display": "create a barcode",
+    "fields": {
+        "ADG": {
+            "caption": "data",
+            "default_val": "",
+            "doc": "The data to be encoded into the barcode. CAUTION: might have size and/or character restrictions depending on the format of barcode selected below.",
+            "editor": "DynamicValue",
+            "name": "data",
+            "rank": 0,
+            "value": "text"
+        },
+        "ADH": {
+            "caption": "format",
+            "default_val": "CODE128",
+            "doc": "The type of barcode to render. Some barcode have character limits. Read more about each type of barcode here: https://github.com/lindell/JsBarcode/wiki#barcodes",
+            "editor": "Dropdown",
+            "name": "format",
+            "options": "CODE128,EAN2,EAN5,EAN8,UPC,EAN13",
+            "rank": 1
+        },
+        "ADI": {
+            "caption": "width",
+            "default_val": 2,
+            "doc": "The width option is the width of a single bar.",
+            "editor": "DynamicValue",
+            "name": "width",
+            "rank": 8,
+            "value": "number"
+        },
+        "ADJ": {
+            "caption": "height",
+            "default_val": 100,
+            "doc": "The height of the barcode.",
+            "editor": "DynamicValue",
+            "name": "height",
+            "rank": 9,
+            "value": "number"
+        },
+        "ADK": {
+            "caption": "display value",
+            "default_val": true,
+            "doc": "Hide or show the value displayed with the barcode.",
+            "editor": "DynamicValue",
+            "name": "displayValue",
+            "rank": 10,
+            "value": "boolean"
+        },
+        "ADL": {
+            "caption": "text",
+            "doc": "Overide the text that is displayed (defaults to the data value that is entered)",
+            "editor": "DynamicValue",
+            "name": "text",
+            "optional": true,
+            "rank": 11,
+            "value": "text"
+        },
+        "ADM": {
+            "caption": "text alignment",
+            "default_val": "center",
+            "doc": "Set the horizontal alignment of the text. Can be left / center / right.",
+            "editor": "Dropdown",
+            "name": "textAlign",
+            "options": "left,center,right",
+            "rank": 12
+        },
+        "ADN": {
+            "caption": "text position",
+            "default_val": "bottom",
+            "doc": "Set the vertical position of the text. Can be bottom / top.",
+            "editor": "Dropdown",
+            "name": "textPosition",
+            "options": "top,bottom",
+            "rank": 13
+        },
+        "ADO": {
+            "caption": "text margin",
+            "default_val": 2,
+            "doc": "Set the space between the barcode and the text.",
+            "editor": "DynamicValue",
+            "name": "textMargin",
+            "rank": 14,
+            "value": "number"
+        },
+        "ADP": {
+            "caption": "font size",
+            "default_val": 20,
+            "doc": "Set the size of the text.",
+            "editor": "DynamicValue",
+            "name": "fontSize",
+            "rank": 15,
+            "value": "number"
+        },
+        "ADQ": {
+            "caption": "background",
+            "default_val": "rgba(255,255,255,1)",
+            "doc": "Set the background of the barcode.",
+            "editor": "Color",
+            "name": "background",
+            "rank": 16
+        },
+        "ADR": {
+            "caption": "line color",
+            "default_val": "rgba(0,0,0,1)",
+            "doc": "default: \"#000000\"",
+            "editor": "Color",
+            "name": "lineColor",
+            "rank": 17
+        },
+        "ADS": {
+            "caption": "margin",
+            "default_val": 10,
+            "doc": "Set the space margin around the barcode. (All sides)",
+            "editor": "DynamicValue",
+            "name": "margin",
+            "rank": 18,
+            "value": "number"
+        },
+        "ADW": {
+            "caption": "Output Control",
+            "editor": "Label",
+            "name": "OutputControl",
+            "rank": 2
+        },
+        "ADY": {
+            "caption": "Format Control",
+            "editor": "Label",
+            "name": "format_control",
+            "rank": 7
+        },
+        "ADZ": {
+            "caption": "A Base 64 representation of the file will always be output and can be used directly as the data source for an image. However, if you would like the plugin to upload the file to your database, check the option below and set a filename.",
+            "editor": "Label",
+            "name": "opt",
+            "rank": 3
+        },
+        "ADa": {
+            "caption": "upload to file manager",
+            "default_val": false,
+            "doc": "Whether the file should be upload to the file manager automatically.",
+            "editor": "DynamicValue",
+            "name": "upload_to_file_manager",
+            "rank": 5,
+            "value": "boolean"
+        },
+        "ADb": {
+            "caption": "filename",
+            "default_val": "barcode.svg",
+            "doc": "The filename (including .svg) for the uploaded file.",
+            "editor": "DynamicValue",
+            "name": "filename",
+            "rank": 6,
+            "value": "text"
+        },
+        "ADd": {
+            "caption": "website home url",
+            "doc": "Use the dynamic value \"Website home url\" that Bubble has built-in",
+            "editor": "DynamicValue",
+            "name": "website_home_url",
+            "rank": 4,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "ADF": {
+            "caption": "base 64",
+            "name": "base_64",
+            "rank": 0,
+            "value": "text"
+        },
+        "ADT": {
+            "caption": "error occurred",
+            "name": "error_occurred",
+            "rank": 2,
+            "value": "boolean"
+        },
+        "ADU": {
+            "caption": "error message",
+            "name": "error_message",
+            "rank": 3,
+            "value": "text"
+        },
+        "ADV": {
+            "caption": "URL",
+            "name": "URL",
+            "rank": 1,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

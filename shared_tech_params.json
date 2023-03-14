@@ -1,0 +1,24 @@
+{
+    "assets": {
+        "ACA": {
+            "name": "easy.qrcode.min.js",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1617153901448x537011009224962050/easy.qrcode.min.js"
+        },
+        "AEI": {
+            "name": "qrcode.js",
+            "url": "//meta.cdn.bubble.io/f1671766251529x614977562333229840/bundle.js"
+        },
+        "AEJ": {
+            "name": "qrcode.js",
+            "url": "//meta.cdn.bubble.io/f1671767180129x463026607934953200/qrcode.js"
+        },
+        "AEX": {
+            "name": "qrcode-placeholder.png",
+            "url": "//meta.cdn.bubble.io/f1671859206880x635859834119714800/nrb-co-qr-code.png"
+        }
+    },
+    "dependencies": {
+        "plugin_api_version": "3",
+        "use_jquery": true
+    }
+}

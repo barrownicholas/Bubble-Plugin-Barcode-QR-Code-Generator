@@ -1,0 +1,96 @@
+{
+    "caption": "render a QR code using",
+    "fields": {
+        "ACu": {
+            "caption": "Data",
+            "doc": "What to encode into the QR Code (should be a URL). For example: google.com",
+            "editor": "DynamicValue",
+            "name": "data",
+            "rank": 0,
+            "value": "text"
+        },
+        "ACy": {
+            "caption": "logo data",
+            "doc": "THIS SHOULD BE THE \"Result of Step X get a logo for an advanced QR code (CORS workaround)'s logo data\"",
+            "editor": "DynamicValue",
+            "name": "logo_uri",
+            "rank": 3,
+            "value": "text"
+        },
+        "ADB": {
+            "caption": "Logo Background Color",
+            "default_val": "rgba(255,255,255,1)",
+            "doc": "",
+            "editor": "Color",
+            "name": "logo_background_color",
+            "rank": 4,
+            "value": "text"
+        },
+        "AEO": {
+            "caption": "QR Code Background",
+            "default_val": "rgba(127,255,173,1)",
+            "editor": "Color",
+            "name": "qr_code_background",
+            "rank": 1
+        },
+        "AEP": {
+            "caption": "QR Code Foreground",
+            "default_val": "rgba(255,0,1,1)",
+            "editor": "Color",
+            "name": "qr_code_foreground",
+            "rank": 2
+        },
+        "AEU": {
+            "caption": "The barcode is always generated on the page and as a base64 URI, but if you prefer to also upload it to the file manager, input the settings below.",
+            "editor": "Label",
+            "name": "info",
+            "rank": 5
+        },
+        "AEV": {
+            "caption": "upload to file manager",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "upload_to_file_manager",
+            "rank": 6,
+            "value": "boolean"
+        },
+        "AEW": {
+            "caption": "filename",
+            "default_val": "qr-code.png",
+            "editor": "DynamicValue",
+            "name": "filename",
+            "rank": 7,
+            "value": "text"
+        },
+        "AEY": {
+            "caption": "Size Override",
+            "editor": "Label",
+            "name": "size_override",
+            "rank": 8
+        },
+        "AEZ": {
+            "caption": "By default, the QR Code is rendered on the screen the same size as the element. However, you may use the options below to override its size. WARNING: the QR Code will not render in its element if you override the size; you will need to display its output as an image and should resize this element to 1 px by 1 px.",
+            "editor": "Label",
+            "name": "size_override",
+            "rank": 9
+        },
+        "AEa": {
+            "caption": "override size",
+            "default_val": false,
+            "doc": "Whether or not to override the size.",
+            "editor": "DynamicValue",
+            "name": "override_size",
+            "rank": 10,
+            "value": "boolean"
+        },
+        "AEb": {
+            "caption": "size",
+            "doc": "The number of pixels to render the code (note that size = length = width). Required if the box above is checked.",
+            "editor": "DynamicValue",
+            "name": "size",
+            "optional": true,
+            "rank": 11,
+            "value": "number"
+        }
+    }
+}

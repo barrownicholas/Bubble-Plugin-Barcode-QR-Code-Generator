@@ -1,0 +1,45 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 50,
+        "width": 50
+    },
+    "display": "QR Code With Logo",
+    "events": {
+        "ACv": {
+            "caption": "has finished generating",
+            "name": "is_generated"
+        },
+        "AES": {
+            "caption": "is uploaded",
+            "name": "is_uploaded"
+        }
+    },
+    "icon": "ion-ios-barcode-outline",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "MinWidth": true,
+        "Padding": true,
+        "resizable": true
+    },
+    "states": {
+        "AEQ": {
+            "caption": "base64 uri",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    return null;\n}"
+            },
+            "name": "base64_uri",
+            "value": "text"
+        },
+        "AER": {
+            "caption": "url",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    return null;\n}"
+            },
+            "name": "url",
+            "value": "text"
+        }
+    }
+}
